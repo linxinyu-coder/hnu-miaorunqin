@@ -116,23 +116,21 @@ while True:
         eorror=eorror+1########################################3
         time.sleep(1)
         browser.find_element_by_xpath('/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div/div/div/div[1]/div[2]/div[2]/div[2]').click()
+
         time.sleep(1)
         eorror=eorror+1###################################4
         ####地点点击
-        for i in range(1,16):
+
+        for i in range(1,17):
             h='/html/body/div[1]/div/div[5]/div/div[2]/div[1]/ul/li['+str(i)+']'
             browser.find_element_by_xpath(h).click()
             time.sleep(0.5)
-        for i in range(1,10):
-            h='/html/body/div[1]/div/div[5]/div/div[2]/div[2]/ul/li['+str(i)+']'
-            browser.find_element_by_xpath(h).click()
-            time.sleep(0.5)
-        time.sleep(0.5)
         eorror=eorror+1##################################5
+        browser.find_element_by_xpath('/html/body/div[1]/div/div[5]/div/div[2]/div[3]/ul/li[3]').click()
         browser.find_element_by_xpath('/html/body/div[1]/div/div[5]/div/div[1]/button[2]').click()
         time.sleep(2)
         eorror=eorror+1#####################################6
-        browser.find_element_by_xpath('/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div/div/div/div[1]/div[2]/div[3]/div[2]/div/input').send_keys('温泉路111号')
+        browser.find_element_by_xpath('/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div/div/div/div[1]/div[2]/div[3]/div[2]/div/input').send_keys('湖南大学')
         browser.find_element_by_xpath('/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div/div/div/div[1]/div[3]/div[2]/div[2]').click()
         browser.find_element_by_xpath('/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div/div/div/div[1]/div[4]/div[2]/div[1]').click()
         browser.find_element_by_xpath('/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div/div/div/div[1]/div[5]/div[2]/div[2]').click()
