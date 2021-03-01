@@ -136,7 +136,8 @@ while True:
         browser.find_element_by_xpath('/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div/div/div/div[2]/div[3]/div/div[3]/div[2]/input').send_keys('36.5')
         eorror=eorror+1########################################7
         time.sleep(2)
-        doc = browser.find_element_by_xpath('/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div/div/div/div[1]/button')
+
+        doc = browser.find_element_by_xpath('/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div/div/div/div[2]/button')
         TouchActions(browser).tap(doc).perform()
         eorror=eorror+1########################################8
         mail_server = "smtp.126.com"
